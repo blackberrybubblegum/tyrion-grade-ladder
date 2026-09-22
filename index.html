@@ -3,16 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>GCSE Grade Boundaries Calculator 2026 – AQA &amp; Edexcel | Tyrion Papers</title>
+<title>GCSE Grade Boundaries Calculator 2026 – AQA &amp; Edexcel | Grade Ladder</title>
 <meta name="description" content="Enter your raw mark and see your GCSE grade instantly. Official AQA and Edexcel grade boundaries from 2014 to November 2025, with the marks needed for every grade, paper-by-paper boundaries and year-on-year trends.">
-<link rel="canonical" href="https://tyrionpapers.com/2026-grade-boundaries-calculator/">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="theme-color" content="#0F1010">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Tyrion Papers">
+<meta property="og:site_name" content="Grade Ladder">
 <meta property="og:title" content="GCSE Grade Boundaries Calculator – AQA &amp; Edexcel">
 <meta property="og:description" content="Turn a raw mark into a grade using official AQA and Edexcel GCSE grade boundaries, 2014 to 2025.">
-<meta property="og:url" content="https://tyrionpapers.com/2026-grade-boundaries-calculator/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GCSE Grade Boundaries Calculator – AQA &amp; Edexcel">
 <meta name="twitter:description" content="Turn a raw mark into a grade using official AQA and Edexcel GCSE grade boundaries.">
@@ -25,12 +23,11 @@
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "Grade Ladder – GCSE Grade Boundaries Calculator",
-  "url": "https://tyrionpapers.com/2026-grade-boundaries-calculator/",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Any",
   "isAccessibleForFree": true,
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
-  "publisher": { "@type": "Organization", "name": "Tyrion Papers", "url": "https://tyrionpapers.com/" },
+  "publisher": { "@type": "Organization", "name": "Grade Ladder" },
   "description": "Converts a GCSE raw mark into a grade using official AQA and Edexcel grade boundaries, with marks needed for each grade and year-on-year boundary trends."
 }
 </script>
@@ -54,7 +51,7 @@
 </script>
 <style>
 /* ================================================================
-   THEME — Tyrion Papers. Swap brand colours here; everything else,
+   THEME — brand palette. Swap colours here; everything else,
    including the grade gauge, reads from these variables.
    ================================================================ */
 :root{
@@ -347,9 +344,9 @@ footer{margin-top:60px;border-top:1px solid var(--line);padding:26px 0 40px;colo
 <body>
 <header class="site-head">
   <div class="wrap">
-    <a class="logo" href="https://tyrionpapers.com/">
+    <a class="logo" href="#">
       <span class="logo-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 15V3M3 15h12M7 11V8M11 11V5M15 11V2" stroke="#171410" stroke-width="2" stroke-linecap="round"/></svg></span>
-      Grade Ladder <small>by Tyrion Papers</small>
+      Grade Ladder
     </a>
     <nav class="head-nav" aria-label="Page">
       <a href="#faq">How it works</a>
@@ -558,7 +555,7 @@ footer{margin-top:60px;border-top:1px solid var(--line);padding:26px 0 40px;colo
 </main>
 
 <footer>
-  <div class="wrap">Grade Ladder by Tyrion Papers · Data from AQA and Pearson Edexcel · Estimates only, not affiliated with any exam board.</div>
+  <div class="wrap">Grade Ladder · Data from AQA and Pearson Edexcel · Estimates only, not affiliated with any exam board.</div>
 </footer>
 
 <noscript><p class="wrap">This calculator needs JavaScript to look up grade boundaries. Please enable it to see your grade.</p></noscript>
@@ -1068,7 +1065,7 @@ function renderTray() {
   $("#copyTray").hidden = $("#clearTray").hidden = S.tray.length === 0;
 }
 function trayText() {
-  const lines = ["My estimated grades (Grade Ladder by Tyrion Papers)"];
+  const lines = ["My estimated grades (Grade Ladder)"];
   S.tray.forEach(t => lines.push(`- ${t.title}: ${t.mark}/${t.max} = grade ${t.grade} (${t.board} ${t.series})`));
   const nums = S.tray.map(t => gradeValue(t.grade)).filter(v => v != null);
   if (nums.length) lines.push(`Average grade: ${(nums.reduce((a, b) => a + b, 0) / nums.length).toFixed(1)}`);
